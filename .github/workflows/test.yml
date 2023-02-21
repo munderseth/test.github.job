@@ -5,6 +5,7 @@ on:
       name:
         description: 'Job name'
         required: true
+        default: "job-example"
 jobs:
   job-example:
     if: github.job == github.event.inputs.name 
